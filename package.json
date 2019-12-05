@@ -1,6 +1,6 @@
 {
   "private": true,
-  "name": "gatsby-basic-themes",
+  "name": "basic-themes",
   "version": "1.0.0",
   "author": "Patrick",
   "workspaces": [
