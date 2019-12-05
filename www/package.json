@@ -3,5 +3,6 @@
   "version": "0.0.1",
   "description": "It is our new gatsby page",
   "main": "gatsby-config.js",
-  "license": "MIT"
+  "license": "MIT",
+  "author": "Patrick"
 }

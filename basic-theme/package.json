@@ -2,7 +2,7 @@
   "private": true,
   "name": "basic-theme",
   "version": "1.0.0",
-  "main": "gatsby-config.js",
+  "main": "index.js",
   "author": "Patrick",
   "license": "MIT"
 }

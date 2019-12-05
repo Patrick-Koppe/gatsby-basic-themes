@@ -2,6 +2,7 @@
   "private": true,
   "name": "gatsby-basic-themes",
   "version": "1.0.0",
+  "author": "Patrick",
   "workspace": [
     "basic-theme",
     "www"
