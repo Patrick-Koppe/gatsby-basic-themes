@@ -1,4 +1,4 @@
-# Let's start
+# Setup our Project
 
 ## Install Gatsby in www folder
 <ol>
@@ -16,4 +16,11 @@ workspace <b>site</b> is the name of package.json in the www folder.
 <li>Move in basic-theme folder<code>cd basic-theme</code>.</li>
 <li>Install gatsby <code>yarn workspace basic-theme add gatsby -D</code>.</li>
 workspace <b>basic-theme</b> is the name of package.json in the www folder and with dev Dependencies.
+<li>Edit the package.json in the basic-theme directory. Copy the devDependencies and paste it and change it to <code>"peerDependencies": {...}</code>.
+</li>
+<li>Install React & React-dom and React <code>yarn workspace basic-theme add react react-dom -D</code>.</li>
+<li>Add also these dependencies in the peerDependencies config.
+<li> Install react & react-dom also for site workspace
+<code>yarn workspace site add react react-dom</code>
+</li>
 </ol>
