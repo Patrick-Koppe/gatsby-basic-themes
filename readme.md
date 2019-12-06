@@ -31,7 +31,7 @@ workspace <b>basic-theme</b> is the name of package.json in the www folder and w
 <code>src/pages/index.mdx</code></br>
 <code>src/pages/index.js</code> insert here comment no-op. This file is for entrypoint in package json.
 <li>Add gatby mdx as dependencies to transform the markdown: 
-<code>yarn workspace basic-theme add gatsby-mdx</code>
+<code>yarn workspace basic-theme add gatsby-plugin-mdx</code>
 </li>
 <li>Add a gatsby-config in the src folder for this plugin
 <code>src/gatsby-config.js</code>
