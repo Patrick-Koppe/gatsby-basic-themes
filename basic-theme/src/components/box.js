@@ -1,10 +1,12 @@
 import React from 'react';
 import colors from '../tokens/colors';
+import layouts from '../tokens/layouts';
 
 export default ({ children }) => (
   <div style={{
-    padding: '1rem',
-    backgroundColor: colors.primary
+    backgroundColor: colors.primary,
+    margin: layouts.center,
+    width: layouts.half
   }}
   >{children}</div>
 )
