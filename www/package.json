@@ -2,7 +2,7 @@
   "name": "site",
   "version": "0.0.1",
   "description": "It is our new gatsby page",
-  "main": "gatsby-config.js",
+  "main": "index.js",
   "license": "MIT",
   "author": "Patrick",
   "scripts": {
