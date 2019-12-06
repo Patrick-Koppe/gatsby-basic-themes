@@ -49,6 +49,38 @@ workspace <b>basic-theme</b> is the name of package.json in the www folder and w
 <li>Test our theme 🎉 <code>yarn workspace site develop</code></li>
 </ol>
 
+# Upgrade our basic theme 💡
+<ol>
+<li>Set a default layout for our theme. Create a components folder and a layout.js file</li>
+<li>Edit the gatsby-config with a defaultLayout in gatsby-plugin-mdx and set the path to our new layout.js.</li>
+<li>Import now our layouts.js in the md file index.mdx like: <code>import Layout from "../components/layout.js";</code></li>
+<li>Re-run gatsby workspaces 🎉<code> yarn workspace site develop</code>.</li>
+<li>Now you can add some new components :)</li>
+</ol>
+
+# Expand the site with additional mdx
+<ol>
+<li>create an new about.mdx file in www/src/pages/about.mdx</li>
+<li>Import a component from our base-theme in our site: </br>
+Export the modul in the index.js in our basic-theme: </br>
+<code>export { default as Box} from './src/components/box';</code>
+Import now the component from our basic-theme and wrap it where it's needed </br>
+<code>import { Box } from 'basic-theme';</code>
+</li>
+<li>It's better to use a "config" file for css things like colors, spaces, fonts, etc. So create a folder inside our basic-theme and a config file <code>src/tokens/colorsjs</code>.
+Now define your variables like: <code>export default {
+  primary: 'tomato'
+};</code>.
+</li>
+<li>Use the variables of the config file in your components like:</br>
+<code>import colors from '../tokens/colors';</code></br>
+<code>backgroundColor: colors.primary</code>
+</li>
+<li>Now it is possible to override these colors in your site. First create a folder in the src folder with the name of your theme and use the same structure like: <code>src/basic-theme/tokens/colors.js</code></br>
+In this file you can override now the variables like: <code>export default {primary: 'hotpink'}</code>
+</li>
+<li>Re-run again 🎉<li>
+</ol>
 
 # Useful commands  🛠
 <code>yarn</code> : Install packages </br>
